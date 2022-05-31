@@ -22,8 +22,8 @@ const  ExpenseFilter = (props)=>{
                 <select onChange={yearChangeHandler}>
                     <option selected value="all" >--Year--</option>
                     {
-                        Array.from(years).map(y=>(
-                            <option value={y}>{y}</option>
+                        Array.from(years).sort().map(y=>(
+                            <option value={y} key={y}>{y}</option>
                         ))
                     }
                     

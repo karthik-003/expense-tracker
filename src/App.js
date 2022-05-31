@@ -8,9 +8,9 @@ import React,{ useState }  from 'react';
 function App() {
 
   const expensesMaster = [
-    {date: new Date(2021,9,21),title:'Electricity Bill',amount: 12.35},
-    {date: new Date(2021,10,22),title:'Insurance Premium',amount: 300.47},
-    {date: new Date(2020,9,1),title:'House Tax',amount: 100.35}
+    {id:'1',date: new Date(2021,9,21),title:'Electricity Bill',amount: 12.35},
+    {id:'2',date: new Date(2021,10,22),title:'Insurance Premium',amount: 300.47},
+    {id:'3',date: new Date(2020,9,1),title:'House Tax',amount: 100.35}
   ];
   const [expenses,setExpenses] = useState(expensesMaster);
 
