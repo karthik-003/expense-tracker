@@ -1,0 +1,22 @@
+.expense-filter {
+    background-color: lightsteelblue;
+    border: 2px solid white;
+    border-radius: 5px;;
+}
+
+.header{
+    display: flex;
+    align-items: flex-end;
+}
+.header > p{
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2%;
+}
+.header > select{
+    margin-right: 2%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}

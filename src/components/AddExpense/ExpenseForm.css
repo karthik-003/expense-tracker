@@ -1,0 +1,65 @@
+.newExpenseForm{
+    border: 2px solid black;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    flex-direction: column;
+    background-color: #224a76;
+    color: white;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+.formControl{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.col-50 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    left: 0;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    left: 0;
+}
+.formControl > input{
+    border-radius: 5px;
+    width: 75%;
+}
+.formControl > label{
+    font-weight: bold
+
+}
+.row .formControl > button{
+    border-radius: 5px;
+    background: -webkit-linear-gradient(top, #f7fbfc 0%,white 10%,grey 100%);
+}
+.newExpenseForm >.row:last-child{
+    margin-bottom: 2%;
+    flex-direction: inherit;
+    align-items: center;
+}
+
+.controlHolder{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: auto;
+}
