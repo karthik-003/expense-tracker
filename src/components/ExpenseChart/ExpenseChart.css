@@ -1,9 +1,38 @@
-.chart{
-    width: 100%;
-    height: 40%;
-    border-radius: 5px;
-    border: 2px solid black;
+
+.bar{
     display: flex;
-    
-    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    height: 100%;
 }
+
+.chartContainer {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 1%;
+}
+.barValueHolder{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    
+}
+.barValue {
+    display: inline-flex;
+    width: 15px;
+    background-color: white;
+    
+}
+.barEmpty{
+    display: inline-flex;
+    width: 15px;
+    
+}
+

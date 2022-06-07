@@ -1,0 +1,31 @@
+
+.expenseHeader {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 95%;
+    /* border: 2px solid white; */
+    /* display: inline-block; */
+    color: white;
+}
+
+.expenseHeader > h2 {
+    color: white;
+    
+}
+.expenseRow {
+    margin-left: 0%;
+    position: relative;
+    display: inline;
+    /* border: 1px solid white; */
+}
+.expenseTitle{
+    display: flex;
+    align-items: center;
+}
+.expenseTitle > button {
+    left: 65%;
+    position: relative;
+}
+.label {
+    font-weight: bold;
+}

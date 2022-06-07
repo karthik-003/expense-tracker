@@ -1,39 +1,26 @@
-import "./ExpenseChart.css"
-import MonthlyExpenseBar from "./MonthlyExpenseBar";
-import React from "react";
-const months = ['JAN','FEB','MARCH','APR']
-const months_ = [{
-    title: 'JAN',
-    expense: 20
-},{
-    title: 'FEB',
-    expense: 15
-},{
-    title: 'MAR',
-    expense: 20
-},{
-    title: 'APR',
-    expense: 20
-}]
-function ExpenseChart(){
+
+import React, { useEffect, useState } from 'react';
+import ChartBar from './ChartBar';
+import './ExpenseChart.css';
+
+const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+
+
+export default (props)=>{
+    const [expData,setExpData] = useState({});
+
+useEffect(()=>{
+    setExpData(props.chartData);
+})
     return (
-        
-            <div className="chart">
-                {
-                    months_.map((e,index)=>{
-                        console.log(e);
-                        return React.createElement(MonthlyExpenseBar, {label: e.title,val:e.expense});
-                        
-                    })
+        <div className='chartContainer'>
+            {months.map((month,index)=>{
+                if( month in expData){
+                    return (<ChartBar key={index} title={month} amount={expData[month]}/>)
                 }
-                {/* <MonthlyExpenseBar/>
-                <MonthlyExpenseBar/>
-                <MonthlyExpenseBar/>
-                <MonthlyExpenseBar/> */}
-            </div>
-            
-       
+                else 
+                    return(<ChartBar title={month} amount='0'/>)
+            })}
+        </div>
     )
 }
-
-export default ExpenseChart;

@@ -11,19 +11,21 @@ const  ExpenseFilter = (props)=>{
         props.onYearChange(updatedYear)
     }
     const [years,setYears] = useState(props.yearsToDisplay);
-
+    const [currentYear,setCurrentyear] = useState(props.currentYear);
     useEffect(()=>{
         setYears(props.yearsToDisplay);
+        setCurrentyear(props.currentYear);
     });
+
     return (
         <div className="expense-filter">
             <div className="header">
                 <p><strong>Filter by Year</strong></p>
                 <select onChange={yearChangeHandler}>
-                    <option selected value="all" >--Year--</option>
+                    <option selected={currentYear == 'all'} value="all" >--Year--</option>
                     {
                         Array.from(years).sort().map(y=>(
-                            <option value={y} key={y}>{y}</option>
+                            <option selected={y == currentYear} value={y} key={y}>{y}</option>
                         ))
                     }
                     

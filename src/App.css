@@ -33,6 +33,12 @@
   color: #61dafb;
 }
 
+.bi{
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 1%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

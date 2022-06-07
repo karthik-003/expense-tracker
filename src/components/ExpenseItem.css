@@ -8,7 +8,6 @@
     flex-direction:row;
     width: 100%;
     margin-top: 1%;
-    cursor: pointer;
     padding: 5px;
     background: -webkit-linear-gradient(top, #f7fbfc 0%,white 10%,grey 100%);
     border-top-left-radius: 10px;
@@ -29,10 +28,10 @@
 }
 
 
-.expense > div:last-child{
+/* .expense > div:last-child{
     
     margin-left: 10%
-}
+} */
 .expense div.title{
     display: flex;
     justify-content: center;
@@ -48,8 +47,24 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    text-align: right;
+    text-align: left;
     margin-right: 5%;
     
+    
+}
+
+.comments {
+    display: inline-block;
+    width: 100%;
+}
+.expenseActions{
+    display: inline-block;
+    /* border: 1px solid black; */
+    padding-top: 1%;
+    padding-left: 5%;
+}
+.bi-x-circle{
+    color:red;
+    cursor: pointer;
 }
 
